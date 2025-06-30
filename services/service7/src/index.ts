@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { BaseService } from '../../../shared/base-service';
+import { BaseService } from './shared/base-service';
 
 class TodoService extends BaseService {
   constructor() {
