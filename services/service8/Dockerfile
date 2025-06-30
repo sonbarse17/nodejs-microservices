@@ -6,7 +6,7 @@ COPY package*.json ./
 RUN if [ -f package-lock.json ]; then npm ci; else npm install; fi
 
 COPY . .
-RUN npm run build
+RUN npx tsc
 
 FROM node:18-alpine AS production
 
